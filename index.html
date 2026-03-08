@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vinayak Rastogi — Technical Lead with 7+ years in cross-platform mobile development (Flutter, Angular, Ionic). Based in Mumbai, India." />
+  <meta name="keywords" content="Flutter developer, Technical Lead, Mobile App Developer, Mumbai, Dart, Angular, Ionic" />
+  <meta property="og:title" content="Vinayak Rastogi | Technical Lead" />
+  <meta property="og:description" content="Cross-platform mobile developer & engineering lead specializing in Flutter, Angular, and fintech/insurance products." />
+  <meta property="og:type" content="website" />
+  <title>Vinayak Rastogi | Technical Lead</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-logo">VR.</div>
+    <div class="loader-track"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Vinayak Rastogi home">VR<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:vinayak.rstg94@gmail.com" class="btn btn-primary nav-cta" aria-label="Get in touch via email">Get in Touch</a>
+      <button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close navigation menu">&times;</button>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- =============================================
+         HERO
+    ============================================= -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-main">
+        <div class="container">
+          <div class="hero-inner">
+
+            <div class="hero-content">
+              <div class="hero-available" aria-label="Currently available for opportunities">
+                <span class="available-dot" aria-hidden="true"></span>
+                Available for new opportunities
+              </div>
+              <p class="hero-greeting">// hello world, I'm</p>
+              <h1 class="hero-name">
+                Vinayak <span class="highlight">Rastogi</span>
+              </h1>
+              <p class="hero-title">
+                <strong>Technical Lead</strong> &mdash; Mobile &amp; Cross-Platform Engineering
+              </p>
+              <p class="hero-desc">
+                I build mobile products that people use daily &mdash; from concept to multi-platform launch.
+                7+ years turning complex ideas into clean, fast, and reliable apps in insurance &amp; fintech.
+              </p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                <a href="mailto:vinayak.rstg94@gmail.com" class="btn btn-outline" aria-label="Email Vinayak">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  Email Me
+                </a>
+              </div>
+              <div class="hero-stats" role="list" aria-label="Career highlights">
+                <div class="stat" role="listitem">
+                  <div class="stat-number" data-count="7" data-suffix="+">7+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat" role="listitem">
+                  <div class="stat-number" data-count="10" data-suffix="+">10+</div>
+                  <div class="stat-label">Apps Shipped</div>
+                </div>
+                <div class="stat" role="listitem">
+                  <div class="stat-number" data-count="4" data-suffix="">4</div>
+                  <div class="stat-label">Engineers Led</div>
+                </div>
+                <div class="stat" role="listitem">
+                  <div class="stat-number" data-count="40" data-suffix="%">40%</div>
+                  <div class="stat-label">Perf. Gains Delivered</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rotating Avatar -->
+            <div class="hero-avatar-wrap" aria-hidden="true">
+              <svg class="hero-avatar-svg" width="260" height="260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#38bdf8"/>
+                    <stop offset="100%" stop-color="#2dd4bf"/>
+                  </linearGradient>
+                  <path id="ringPath" d="M130,130 m-93,0 a93,93 0 1,1 186,0 a93,93 0 1,1 -186,0"/>
+                </defs>
+                <circle cx="130" cy="130" r="126" fill="none" stroke="rgba(14,165,233,0.07)" stroke-width="1"/>
+                <circle cx="130" cy="130" r="96" fill="none" stroke="rgba(14,165,233,0.1)" stroke-width="1" stroke-dasharray="3 7"/>
+                <circle cx="130" cy="130" r="72" fill="#020817" stroke="url(#avatarGrad)" stroke-width="2"/>
+                <text x="130" y="145" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="52" font-weight="800" fill="url(#avatarGrad)">VR</text>
+                <g class="avatar-ring">
+                  <circle cx="130" cy="130" r="118" fill="none" stroke="url(#avatarGrad)" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.4"/>
+                  <text font-family="'JetBrains Mono', monospace" font-size="10" fill="#0ea5e9" opacity="0.7" letter-spacing="8">
+                    <textPath href="#ringPath">· VINAYAK · RASTOGI · </textPath>
+                  </text>
+                  <circle cx="130" cy="12" r="3" fill="#0ea5e9"/>
+                  <circle cx="248" cy="130" r="3" fill="#14b8a6"/>
+                  <circle cx="130" cy="248" r="3" fill="#0ea5e9" opacity="0.5"/>
+                  <circle cx="12" cy="130" r="3" fill="#14b8a6" opacity="0.5"/>
+                </g>
+              </svg>
+            </div>
+
+          </div><!-- /.hero-inner -->
+        </div>
+      </div><!-- /.hero-main -->
+
+      <!-- Tech Ticker -->
+      <div class="hero-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Flutter</span><span class="ticker-sep">·</span>
+          <span>Dart</span><span class="ticker-sep">·</span>
+          <span>Angular</span><span class="ticker-sep">·</span>
+          <span>TypeScript</span><span class="ticker-sep">·</span>
+          <span>Ionic</span><span class="ticker-sep">·</span>
+          <span>REST APIs</span><span class="ticker-sep">·</span>
+          <span>Firebase</span><span class="ticker-sep">·</span>
+          <span>Git</span><span class="ticker-sep">·</span>
+          <span>Agile / Scrum</span><span class="ticker-sep">·</span>
+          <span>CI/CD</span><span class="ticker-sep">·</span>
+          <span>Technical Lead</span><span class="ticker-sep">·</span>
+          <span>Flutter</span><span class="ticker-sep">·</span>
+          <span>Dart</span><span class="ticker-sep">·</span>
+          <span>Angular</span><span class="ticker-sep">·</span>
+          <span>TypeScript</span><span class="ticker-sep">·</span>
+          <span>Ionic</span><span class="ticker-sep">·</span>
+          <span>REST APIs</span><span class="ticker-sep">·</span>
+          <span>Firebase</span><span class="ticker-sep">·</span>
+          <span>Git</span><span class="ticker-sep">·</span>
+          <span>Agile / Scrum</span><span class="ticker-sep">·</span>
+          <span>CI/CD</span><span class="ticker-sep">·</span>
+          <span>Technical Lead</span><span class="ticker-sep">·</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-hint-line"></div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         ABOUT
+    ============================================= -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <span class="section-label reveal">// about me</span>
+        <h2 class="section-title reveal reveal-delay-1" id="about-heading">Engineer, Leader,<br/>Product Thinker</h2>
+        <div class="bento-grid">
+          <!-- Bio -->
+          <div class="bento-card bento-bio reveal reveal-delay-1">
+            <p>I'm a <strong>Technical Lead based in Mumbai</strong>, specializing in cross-platform mobile development.
+              Over the past 7+ years, I've worked primarily in insurance and fintech &mdash; industries where reliability
+              and user trust aren't optional.</p>
+            <p>At <strong>OneInsure</strong>, I lead a team of 4 engineers building products used by thousands of customers
+              and advisors every day. My role lives at the intersection of hands-on engineering, architectural decisions,
+              API design, and close collaboration with product and business teams.</p>
+            <p>I care about <strong>clean code, shipping predictably, and helping developers grow</strong>.
+              I set up the code review and sprint processes my team uses today &mdash; the kind of foundations
+              that make releases boring in the best possible way.</p>
+          </div>
+          <!-- Award -->
+          <div class="bento-card bento-award-card reveal reveal-delay-2" role="complementary" aria-label="Career achievement">
+            <div class="bento-award-icon" aria-hidden="true">&#127942;</div>
+            <div>
+              <div class="award-title">Awarded: "Path Finder"</div>
+              <div class="award-desc">Recognized for finding new technical approaches to tough problems and guiding the team through unfamiliar territory to deliver successfully.</div>
+            </div>
+          </div>
+          <!-- Competencies -->
+          <div class="bento-card bento-competencies-card reveal reveal-delay-2">
+            <span class="bento-card-label">// core competencies</span>
+            <div class="competencies-grid" role="list" aria-label="Core competencies">
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Technical Leadership &amp; Architecture</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Cross-Platform Mobile (Flutter, Ionic)</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>RESTful API Design &amp; Integration</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Agile Delivery &amp; Sprint Planning</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Stakeholder &amp; Client Management</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Team Mentorship &amp; Code Reviews</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Performance Optimization</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>CI/CD &amp; DevOps Practices</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>Product Thinking &amp; Feasibility</div>
+              <div class="competency" role="listitem"><div class="competency-dot" aria-hidden="true"></div>User Journey Mapping</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         EXPERIENCE
+    ============================================= -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <span class="section-label reveal">// career timeline</span>
+        <h2 class="section-title reveal reveal-delay-1" id="experience-heading">Professional Experience</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Building products people rely on, from individual contributor to engineering lead.</p>
+
+        <div class="timeline" role="list">
+
+          <!-- Role 1 -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot current" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Technical Lead</h3>
+                <span class="timeline-period current">Jul 2022 &mdash; Present</span>
+              </div>
+              <div class="timeline-company">Robinhood Insurance Broker Ltd (OneInsure) &bull; Mumbai, India</div>
+              <ul class="timeline-points" aria-label="Responsibilities">
+                <li>Lead a team of 4 engineers on the OneInsure platform &mdash; core web &amp; mobile products used by thousands of customers and insurance advisors daily.</li>
+                <li>Took the OneInsure Money app from initial feasibility study through to a full multi-platform launch (Android, iOS), enabling SIP/Lumpsum investing, e-mandates, and live portfolio tracking.</li>
+                <li>Designed and built RESTful APIs for new platform modules, cutting data retrieval times by ~35% and accelerating feature delivery.</li>
+                <li>Resolved a backlog of recurring client issues, reducing support ticket volume by ~30%.</li>
+                <li>Built sales dashboards giving the team real-time visibility into their numbers &mdash; helping them close deals faster.</li>
+                <li>Established code review processes and sprint rituals that made releases more predictable and reduced production bugs.</li>
+              </ul>
+              <p class="timeline-projects-label">Key Projects</p>
+              <div class="project-tags">
+                <span class="tag">OneInsure SalesApp</span>
+                <span class="tag">OneInsure Money</span>
+                <span class="tag">OneInsure (Main App)</span>
+                <span class="tag">Partner Money App</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Role 2 -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Mobile Developer</h3>
+                <span class="timeline-period">Nov 2020 &mdash; Jun 2022</span>
+              </div>
+              <div class="timeline-company">Robinhood Insurance Broker Ltd (OneInsure) &bull; Mumbai, India</div>
+              <ul class="timeline-points" aria-label="Responsibilities">
+                <li>Handled front-end development and UI revamp across web and mobile apps, improving load times and receiving positive feedback from users and stakeholders.</li>
+                <li>Go-to engineer for client requests and technical escalations &mdash; triaged issues and pushed fixes across multiple product lines.</li>
+                <li>Collaborated closely with designers, product managers, and QA to maintain code quality and smooth feature delivery.</li>
+              </ul>
+              <p class="timeline-projects-label">Key Projects</p>
+              <div class="project-tags">
+                <span class="tag">Reported Business Dashboard</span>
+                <span class="tag">Sukoon (Health Claim)</span>
+                <span class="tag">One Go POS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Role 3 -->
+          <article class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Software Developer</h3>
+                <span class="timeline-period">Dec 2018 &mdash; Oct 2020</span>
+              </div>
+              <div class="timeline-company">SaPraYa Technologies Pvt Ltd &bull; Mumbai, India</div>
+              <ul class="timeline-points" aria-label="Responsibilities">
+                <li>Built hybrid mobile apps (Android &amp; iOS) using Ionic 3 and Angular 4 with modular codebase structures for maintainability and scaling.</li>
+                <li>Wrote API integration layers with proper error handling; managed front-end logic in Angular and TypeScript.</li>
+                <li>Integrated Cordova native plugins and Firebase for push notifications, analytics, and auth. Published to both Google Play Store and Apple App Store.</li>
+              </ul>
+              <p class="timeline-projects-label">Key Projects</p>
+              <div class="project-tags">
+                <span class="tag">LyncBiz / Planet Marathi</span>
+                <span class="tag">WHP Jewelry App</span>
+                <span class="tag">Celebrity Fan Apps</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PROJECTS
+    ============================================= -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <span class="section-label reveal">// what I've built</span>
+        <h2 class="section-title reveal reveal-delay-1" id="projects-heading">Key Projects</h2>
+        <p class="section-subtitle reveal reveal-delay-2">A selection of products I've owned, shipped, and iterated on across my career.</p>
+
+        <div class="projects-grid" role="list">
+
+          <article class="project-card pc-sales" role="listitem" aria-label="OneInsure SalesApp project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#128241;</div>
+              <span class="pc-num" aria-hidden="true">01</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Android / iOS</span>
+                <span class="pc-type">Flutter App</span>
+              </div>
+              <h3 class="project-name">OneInsure SalesApp</h3>
+              <p class="project-desc">Rebuilt the entire sales rep app in Flutter/Dart from scratch. Added GPS-based tracking enabling the company to monitor field sales activity across India in real time.</p>
+              <span class="project-metric">&#8593; 40% performance improvement</span>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">GPS Tracking</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+            <div class="pc-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.robinhood.saleapp" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Sales App on Google Play">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
+                Google Play
+              </a>
+              <a href="https://apps.apple.com/us/app/oneinsure-sales-app/id6464010516" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Sales App on App Store">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                App Store
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card pc-money" role="listitem" aria-label="OneInsure Money project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#128200;</div>
+              <span class="pc-num" aria-hidden="true">02</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Android / iOS</span>
+                <span class="pc-type">Flutter App</span>
+              </div>
+              <h3 class="project-name">OneInsure Money</h3>
+              <p class="project-desc">Multichannel investment platform built end-to-end: SIP/Lumpsum flows, bank e-mandate handling, live portfolio dashboards, and financial goal tracking.</p>
+              <span class="project-metric">Full end-to-end ownership</span>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">E-Mandate</span>
+                <span class="tech-tag">SIP/Lumpsum</span>
+                <span class="tech-tag">Self Onboarding</span>
+              </div>
+            </div>
+            <div class="pc-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.oneinsure.money" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Money on Google Play">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
+                Google Play
+              </a>
+              <a href="https://apps.apple.com/in/app/oneinsure-money/id6741562582" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Money on App Store">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                App Store
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card pc-main" role="listitem" aria-label="OneInsure main app project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#128196;</div>
+              <span class="pc-num" aria-hidden="true">03</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Android / iOS</span>
+                <span class="pc-type">Flutter App</span>
+              </div>
+              <h3 class="project-name">OneInsure (Main App)</h3>
+              <p class="project-desc">Policy document management feature that eliminated manual data entry for the support team. Led a full UI/UX overhaul that lifted app store ratings and user engagement metrics.</p>
+              <span class="project-metric">&#8595; 50% manual data entry reduction</span>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">UI/UX Revamp</span>
+              </div>
+            </div>
+            <div class="pc-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.robinhood.oneinsure" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Main App on Google Play">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
+                Google Play
+              </a>
+              <a href="https://apps.apple.com/in/app/oneinsure-your-insurance-app/id1211262262" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Main App on App Store">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                App Store
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card pc-partner" role="listitem" aria-label="Partner Money App project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#128179;</div>
+              <span class="pc-num" aria-hidden="true">04</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Android / iOS</span>
+                <span class="pc-type">Flutter App</span>
+              </div>
+              <h3 class="project-name">Partner Money App</h3>
+              <p class="project-desc">Real-time brokerage balance tracking for insurance partners and sub-brokers, giving them instant visibility into their earnings and commission history.</p>
+              <span class="project-metric">Real-time earnings visibility</span>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Real-time Data</span>
+              </div>
+            </div>
+            <div class="pc-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.robinhood.partnermoney" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Partner Money App on Google Play">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
+                Google Play
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card pc-dashboard" role="listitem" aria-label="Business KPI Dashboard project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#128202;</div>
+              <span class="pc-num" aria-hidden="true">05</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Web</span>
+                <span class="pc-type">Web App</span>
+              </div>
+              <h3 class="project-name">Business KPI Dashboard</h3>
+              <p class="project-desc">KPI dashboard in AngularJS and Bootstrap providing management with real-time visibility into daily business numbers. Significantly cut the time needed to compile daily reports.</p>
+              <span class="project-metric">&#8595; 60% reporting time saved</span>
+              <div class="project-tech">
+                <span class="tech-tag">AngularJS</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+            <div class="pc-footer pc-footer-empty"></div>
+          </article>
+
+          <article class="project-card pc-pos" role="listitem" aria-label="One Go POS project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#128722;</div>
+              <span class="pc-num" aria-hidden="true">06</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Android</span>
+                <span class="pc-type">Ionic App</span>
+              </div>
+              <h3 class="project-name">One Go POS</h3>
+              <p class="project-desc">Point-of-sale platform enabling insurance agents to offer 360&deg; coverage to customers on the spot &mdash; whether in-office or in the field. Streamlines the entire policy issuance flow.</p>
+              <span class="project-metric">Field &amp; in-office ready</span>
+              <div class="project-tech">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Ionic</span>
+                <span class="tech-tag">Android</span>
+              </div>
+            </div>
+            <div class="pc-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.robinhood.pos" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="One Go POS on Google Play">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
+                Google Play
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card pc-lync" role="listitem" aria-label="LyncBiz Planet Marathi project">
+            <div class="pc-head">
+              <div class="pc-icon" aria-hidden="true">&#127916;</div>
+              <span class="pc-num" aria-hidden="true">07</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="project-platform">Android / iOS</span>
+                <span class="pc-type">Hybrid App</span>
+              </div>
+              <h3 class="project-name">LyncBiz / Planet Marathi</h3>
+              <p class="project-desc">Hybrid business and entertainment platform covering Arts, Culture, and organizational networking. Modular architecture built with Ionic 3 and Angular 4 for ease of scaling.</p>
+              <span class="project-metric">Business + Entertainment platform</span>
+              <div class="project-tech">
+                <span class="tech-tag">Ionic 3</span>
+                <span class="tech-tag">Angular 4</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Cordova</span>
+              </div>
+            </div>
+            <div class="pc-footer pc-footer-empty"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SKILLS
+    ============================================= -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <span class="section-label reveal">// tech stack</span>
+        <h2 class="section-title reveal reveal-delay-1" id="skills-heading">Technical Skills</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Tools and technologies I work with across mobile, web, backend, and infrastructure.</p>
+
+        <div class="skills-grid reveal reveal-delay-2">
+          <div class="skill-category">
+            <div class="skill-category-title">Languages</div>
+            <div class="skill-pills" role="list" aria-label="Programming languages">
+              <span class="skill-pill primary" role="listitem">Dart</span>
+              <span class="skill-pill primary" role="listitem">TypeScript</span>
+              <span class="skill-pill" role="listitem">JavaScript</span>
+              <span class="skill-pill" role="listitem">C# (.NET)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-title">Frameworks</div>
+            <div class="skill-pills" role="list" aria-label="Frameworks">
+              <span class="skill-pill primary" role="listitem">Flutter</span>
+              <span class="skill-pill primary" role="listitem">Angular</span>
+              <span class="skill-pill" role="listitem">Ionic Framework</span>
+              <span class="skill-pill" role="listitem">ASP.NET MVC</span>
+              <span class="skill-pill" role="listitem">Bootstrap</span>
+              <span class="skill-pill" role="listitem">jQuery</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-title">Web Technologies</div>
+            <div class="skill-pills" role="list" aria-label="Web technologies">
+              <span class="skill-pill primary" role="listitem">HTML5</span>
+              <span class="skill-pill primary" role="listitem">CSS3</span>
+              <span class="skill-pill" role="listitem">SASS</span>
+              <span class="skill-pill" role="listitem">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-title">Backend &amp; APIs</div>
+            <div class="skill-pills" role="list" aria-label="Backend and API skills">
+              <span class="skill-pill primary" role="listitem">RESTful APIs</span>
+              <span class="skill-pill" role="listitem">MSSQL</span>
+              <span class="skill-pill" role="listitem">Firebase</span>
+              <span class="skill-pill" role="listitem">API Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-title">Tools &amp; Platforms</div>
+            <div class="skill-pills" role="list" aria-label="Tools and platforms">
+              <span class="skill-pill primary" role="listitem">Git / GitHub</span>
+              <span class="skill-pill" role="listitem">Postman</span>
+              <span class="skill-pill" role="listitem">Firebase Console</span>
+              <span class="skill-pill" role="listitem">Tortoise SVN</span>
+              <span class="skill-pill" role="listitem">macOS</span>
+              <span class="skill-pill" role="listitem">Windows</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-title">Leadership &amp; Process</div>
+            <div class="skill-pills" role="list" aria-label="Leadership and process skills">
+              <span class="skill-pill primary" role="listitem">Agile / Scrum</span>
+              <span class="skill-pill" role="listitem">Sprint Planning</span>
+              <span class="skill-pill" role="listitem">Code Reviews</span>
+              <span class="skill-pill" role="listitem">CI/CD</span>
+              <span class="skill-pill" role="listitem">Team Mentorship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         EDUCATION
+    ============================================= -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <span class="section-label reveal">// academic background</span>
+        <h2 class="section-title reveal reveal-delay-1" id="education-heading">Education</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Foundation built at Mumbai's leading institutions.</p>
+
+        <div class="education-grid reveal reveal-delay-2">
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true">&#127979;</div>
+            <div>
+              <div class="edu-degree">Master of Computer Applications (MCA)</div>
+              <div class="edu-school">KJ Somaiya Institute of Management Studies and Research</div>
+              <div class="edu-year">Graduated Jun 2019 &bull; Mumbai</div>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true">&#127891;</div>
+            <div>
+              <div class="edu-degree">B.Sc. in Information Technology</div>
+              <div class="edu-school">Bhavna Trust Junior and Degree College of Commerce &amp; Science</div>
+              <div class="edu-year">Graduated Dec 2015 &bull; Mumbai</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CONTACT
+    ============================================= -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <span class="section-label reveal">// get in touch</span>
+        <h2 class="section-title reveal reveal-delay-1" id="contact-heading">Let's Work Together</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Open to new opportunities, collaborations, or just a good conversation about building great products.</p>
+
+        <div class="contact-grid reveal reveal-delay-2">
+          <div class="contact-info">
+            <a href="mailto:vinayak.rstg94@gmail.com" class="contact-item" aria-label="Send email to Vinayak">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">vinayak.rstg94@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+919819854449" class="contact-item" aria-label="Call Vinayak">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.54 3.49 2 2 0 0 1 3.5 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.16 6.16l1.21-1.21a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-value">+91 98198 54449</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/vinayak-rastogi-aa92a779" class="contact-item" target="_blank" rel="noopener noreferrer" aria-label="Vinayak's LinkedIn profile">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-value">vinayak-rastogi-aa92a779</div>
+              </div>
+            </a>
+            <div class="contact-item contact-item-static" aria-label="Location: Mumbai, India">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-value">Mumbai, India</div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Name <span aria-label="required">*</span></label>
+                <input class="form-input" type="text" id="form-name" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-email">Email <span aria-label="required">*</span></label>
+                <input class="form-input" type="email" id="form-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subject</label>
+              <input class="form-input" type="text" id="form-subject" name="subject" placeholder="What's this about?" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message <span aria-label="required">*</span></label>
+              <textarea class="form-textarea" id="form-message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div class="form-success" id="form-success" role="alert" aria-live="polite">
+              Message sent! I'll get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-text">Designed &amp; built by <span>Vinayak Rastogi</span> &bull; Mumbai, India &bull; <span id="footer-year"></span></p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+
+  <!-- =============================================
+       JAVASCRIPT
+  ============================================= -->
+  <script>
+    // ---- Theme (light/dark) ----
+    (function() {
+      const saved = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+
+    // ---- Disable scroll restoration so page always starts at top ----
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+
+    // ---- Page Loader ----
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('page-loader').classList.add('hidden');
+      }, 1400);
+    });
+
+    // ---- Scroll Progress Bar ----
+    const progressBar = document.getElementById('scroll-progress');
+    function updateProgress() {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (scrolled / total * 100) + '%';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+
+    // ---- Custom Cursor ----
+    const cursorDot  = document.getElementById('cursor-dot');
+    const cursorRing = document.getElementById('cursor-ring');
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursorDot.style.left = mouseX + 'px';
+      cursorDot.style.top  = mouseY + 'px';
+    });
+    (function animateCursor() {
+      ringX += (mouseX - ringX) * 0.14;
+      ringY += (mouseY - ringY) * 0.14;
+      cursorRing.style.left = ringX + 'px';
+      cursorRing.style.top  = ringY + 'px';
+      requestAnimationFrame(animateCursor);
+    })();
+    document.querySelectorAll('a, button, .bento-card, .project-card, .skill-category, .edu-card, .contact-item').forEach(el => {
+      el.addEventListener('mouseenter', () => cursorRing.classList.add('expand'));
+      el.addEventListener('mouseleave', () => cursorRing.classList.remove('expand'));
+    });
+
+    // ---- Navbar Scroll Effect ----
+    const navbar   = document.getElementById('navbar');
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      backToTop.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
+    // ---- Active Nav Link ----
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-links a');
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => sectionObserver.observe(s));
+
+    // ---- Hamburger / Mobile Nav ----
+    const hamburger   = document.getElementById('hamburger-btn');
+    const mobileNav   = document.getElementById('mobile-nav');
+    const mobileClose = document.getElementById('mobile-close');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    function openMobileNav()  { mobileNav.classList.add('open'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+    function closeMobileNav() { mobileNav.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', openMobileNav);
+    mobileClose.addEventListener('click', closeMobileNav);
+    mobileLinks.forEach(link => link.addEventListener('click', closeMobileNav));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobileNav.classList.contains('open')) closeMobileNav(); });
+
+    // ---- Reveal on Scroll ----
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ---- Timeline & Project Card Animations ----
+    const cardObserver = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 90);
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.timeline-item, .project-card').forEach(el => cardObserver.observe(el));
+
+    // ---- Stat Counter Animation ----
+    function animateCount(el) {
+      const target = parseInt(el.dataset.count);
+      const suffix = el.dataset.suffix || '';
+      let start = null;
+      const duration = 1600;
+      const step = ts => {
+        if (!start) start = ts;
+        const progress = Math.min((ts - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.8 });
+    document.querySelectorAll('.stat-number[data-count]').forEach(el => counterObserver.observe(el));
+
+    // ---- Dynamic Footer Year ----
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // ---- Theme Toggle ----
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // ---- Back to Top ----
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ---- Contact Form ----
+    const form       = document.getElementById('contact-form');
+    const successMsg = document.getElementById('form-success');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name    = document.getElementById('form-name').value.trim();
+      const email   = document.getElementById('form-email').value.trim();
+      const subject = document.getElementById('form-subject').value.trim();
+      const message = document.getElementById('form-message').value.trim();
+      if (!name || !email || !message) { alert('Please fill in all required fields.'); return; }
+      const mailSubject = encodeURIComponent(subject || `Portfolio Contact from ${name}`);
+      const mailBody    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:vinayak.rstg94@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+      successMsg.style.display = 'block';
+      form.reset();
+      setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+    });
+  </script>
+</body>
+</html>
