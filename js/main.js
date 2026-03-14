@@ -65,6 +65,56 @@ const animObserver = new IntersectionObserver((entries) => {
 animatedEls.forEach(el => animObserver.observe(el));
 
 // =============================================
+// SKILLS — tab switching + bar animation
+// =============================================
+(function() {
+  const tabs = document.querySelectorAll('.sk-tab');
+  if (!tabs.length) return;
+
+  function animateBars(panel) {
+    panel.querySelectorAll('.sk-fill').forEach(fill => {
+      fill.classList.remove('animated');
+      requestAnimationFrame(() => requestAnimationFrame(() => fill.classList.add('animated')));
+    });
+  }
+
+  // Animate bars of the initially active panel on load
+  const activePanel = document.querySelector('.sk-panel.active');
+  if (activePanel) setTimeout(() => animateBars(activePanel), 200);
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const targetId = tab.dataset.panel;
+      document.querySelectorAll('.sk-panel').forEach(p => p.classList.remove('active'));
+      const panel = document.getElementById(targetId);
+      if (panel) {
+        panel.classList.add('active');
+        animateBars(panel);
+      }
+    });
+  });
+})();
+
+// =============================================
+// EXPERIENCE — expand / collapse
+// =============================================
+document.querySelectorAll('.tl-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.timeline-card');
+    const expandable = card.querySelector('.tl-expandable');
+    const isOpen = expandable.classList.toggle('open');
+    expandable.setAttribute('aria-hidden', String(!isOpen));
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', String(isOpen));
+    btn.querySelector('.tl-toggle-text').textContent = isOpen ? 'View Less' : 'View More';
+  });
+});
+
+// =============================================
 // BACK TO TOP
 // =============================================
 backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));

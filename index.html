@@ -112,7 +112,7 @@
                   <div class="stat-label">Apps Shipped</div>
                 </div>
                 <div class="stat" role="listitem">
-                  <div class="stat-number" data-count="4" data-suffix="">4</div>
+                  <div class="stat-number" data-count="4" data-suffix="+">4+</div>
                   <div class="stat-label">Engineers Led</div>
                 </div>
                 <div class="stat" role="listitem">
@@ -259,18 +259,26 @@
               <ul class="timeline-points" aria-label="Responsibilities">
                 <li>Lead a team of 4 engineers on the OneInsure platform &mdash; core web &amp; mobile products used by thousands of customers and insurance advisors daily.</li>
                 <li>Took the OneInsure Money app from initial feasibility study through to a full multi-platform launch (Android, iOS), enabling SIP/Lumpsum investing, e-mandates, and live portfolio tracking.</li>
-                <li>Designed and built RESTful APIs for new platform modules, cutting data retrieval times by ~35% and accelerating feature delivery.</li>
-                <li>Resolved a backlog of recurring client issues, reducing support ticket volume by ~30%.</li>
-                <li>Built sales dashboards giving the team real-time visibility into their numbers &mdash; helping them close deals faster.</li>
-                <li>Established code review processes and sprint rituals that made releases more predictable and reduced production bugs.</li>
               </ul>
-              <p class="timeline-projects-label">Key Projects</p>
-              <div class="project-tags">
-                <span class="tag">OneInsure SalesApp</span>
-                <span class="tag">OneInsure Money</span>
-                <span class="tag">OneInsure (Main App)</span>
-                <span class="tag">Partner Money App</span>
+              <div class="tl-expandable" aria-hidden="true">
+                <ul class="timeline-points">
+                  <li>Designed and built RESTful APIs for new platform modules, cutting data retrieval times by ~35% and accelerating feature delivery.</li>
+                  <li>Resolved a backlog of recurring client issues, reducing support ticket volume by ~30%.</li>
+                  <li>Built sales dashboards giving the team real-time visibility into their numbers &mdash; helping them close deals faster.</li>
+                  <li>Established code review processes and sprint rituals that made releases more predictable and reduced production bugs.</li>
+                </ul>
+                <p class="timeline-projects-label">Key Projects</p>
+                <div class="project-tags">
+                  <span class="tag">OneInsure SalesApp</span>
+                  <span class="tag">OneInsure Money</span>
+                  <span class="tag">OneInsure (Main App)</span>
+                  <span class="tag">Partner Money App</span>
+                </div>
               </div>
+              <button class="tl-toggle" aria-expanded="false">
+                <span class="tl-toggle-text">View More</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
             </div>
           </article>
 
@@ -286,14 +294,22 @@
               <ul class="timeline-points" aria-label="Responsibilities">
                 <li>Handled front-end development and UI revamp across web and mobile apps, improving load times and receiving positive feedback from users and stakeholders.</li>
                 <li>Go-to engineer for client requests and technical escalations &mdash; triaged issues and pushed fixes across multiple product lines.</li>
-                <li>Collaborated closely with designers, product managers, and QA to maintain code quality and smooth feature delivery.</li>
               </ul>
-              <p class="timeline-projects-label">Key Projects</p>
-              <div class="project-tags">
-                <span class="tag">Reported Business Dashboard</span>
-                <span class="tag">Sukoon (Health Claim)</span>
-                <span class="tag">One Go POS</span>
+              <div class="tl-expandable" aria-hidden="true">
+                <ul class="timeline-points">
+                  <li>Collaborated closely with designers, product managers, and QA to maintain code quality and smooth feature delivery.</li>
+                </ul>
+                <p class="timeline-projects-label">Key Projects</p>
+                <div class="project-tags">
+                  <span class="tag">Reported Business Dashboard</span>
+                  <span class="tag">Sukoon (Health Claim)</span>
+                  <span class="tag">One Go POS</span>
+                </div>
               </div>
+              <button class="tl-toggle" aria-expanded="false">
+                <span class="tl-toggle-text">View More</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
             </div>
           </article>
 
@@ -309,14 +325,22 @@
               <ul class="timeline-points" aria-label="Responsibilities">
                 <li>Built hybrid mobile apps (Android &amp; iOS) using Ionic 3 and Angular 4 with modular codebase structures for maintainability and scaling.</li>
                 <li>Wrote API integration layers with proper error handling; managed front-end logic in Angular and TypeScript.</li>
-                <li>Integrated Cordova native plugins and Firebase for push notifications, analytics, and auth. Published to both Google Play Store and Apple App Store.</li>
               </ul>
-              <p class="timeline-projects-label">Key Projects</p>
-              <div class="project-tags">
-                <span class="tag">LyncBiz / Planet Marathi</span>
-                <span class="tag">WHP Jewelry App</span>
-                <span class="tag">Celebrity Fan Apps</span>
+              <div class="tl-expandable" aria-hidden="true">
+                <ul class="timeline-points">
+                  <li>Integrated Cordova native plugins and Firebase for push notifications, analytics, and auth. Published to both Google Play Store and Apple App Store.</li>
+                </ul>
+                <p class="timeline-projects-label">Key Projects</p>
+                <div class="project-tags">
+                  <span class="tag">LyncBiz / Planet Marathi</span>
+                  <span class="tag">WHP Jewelry App</span>
+                  <span class="tag">Celebrity Fan Apps</span>
+                </div>
               </div>
+              <button class="tl-toggle" aria-expanded="false">
+                <span class="tl-toggle-text">View More</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
             </div>
           </article>
 
@@ -335,7 +359,7 @@
 
         <div class="projects-grid" role="list">
 
-          <article class="project-card pc-sales" role="listitem" aria-label="OneInsure SalesApp project">
+          <article class="project-card pc-sales" id="proj-sales" role="listitem" aria-label="OneInsure SalesApp project">
             <div class="pc-head">
               <div class="pc-icon" aria-hidden="true">&#128241;</div>
               <span class="pc-num" aria-hidden="true">01</span>
@@ -348,26 +372,16 @@
               <h3 class="project-name">OneInsure SalesApp</h3>
               <p class="project-desc">Rebuilt the entire sales rep app in Flutter/Dart from scratch. Added GPS-based tracking enabling the company to monitor field sales activity across India in real time.</p>
               <span class="project-metric">&#8593; 40% performance improvement</span>
-              <div class="project-tech">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Dart</span>
-                <span class="tech-tag">GPS Tracking</span>
-                <span class="tech-tag">REST API</span>
-              </div>
             </div>
-            <div class="pc-footer">
-              <a href="https://play.google.com/store/apps/details?id=com.robinhood.saleapp" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Sales App on Google Play">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
-                Google Play
-              </a>
-              <a href="https://apps.apple.com/us/app/oneinsure-sales-app/id6464010516" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Sales App on App Store">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                App Store
+            <div class="pc-card-actions">
+              <a href="projects.html#proj-sales" class="btn-view-more">
+                <span>View More</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </article>
 
-          <article class="project-card pc-money" role="listitem" aria-label="OneInsure Money project">
+          <article class="project-card pc-money" id="proj-money" role="listitem" aria-label="OneInsure Money project">
             <div class="pc-head">
               <div class="pc-icon" aria-hidden="true">&#128200;</div>
               <span class="pc-num" aria-hidden="true">02</span>
@@ -380,27 +394,16 @@
               <h3 class="project-name">OneInsure Money</h3>
               <p class="project-desc">Multichannel investment platform built end-to-end: SIP/Lumpsum flows, bank e-mandate handling, live portfolio dashboards, and financial goal tracking.</p>
               <span class="project-metric">Full end-to-end ownership</span>
-              <div class="project-tech">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Dart</span>
-                <span class="tech-tag">E-Mandate</span>
-                <span class="tech-tag">SIP/Lumpsum</span>
-                <span class="tech-tag">Self Onboarding</span>
-              </div>
             </div>
-            <div class="pc-footer">
-              <a href="https://play.google.com/store/apps/details?id=com.oneinsure.money" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Money on Google Play">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
-                Google Play
-              </a>
-              <a href="https://apps.apple.com/in/app/oneinsure-money/id6741562582" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Money on App Store">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                App Store
+            <div class="pc-card-actions">
+              <a href="projects.html#proj-money" class="btn-view-more">
+                <span>View More</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </article>
 
-          <article class="project-card pc-main" role="listitem" aria-label="OneInsure main app project">
+          <article class="project-card pc-main" id="proj-main" role="listitem" aria-label="OneInsure main app project">
             <div class="pc-head">
               <div class="pc-icon" aria-hidden="true">&#128196;</div>
               <span class="pc-num" aria-hidden="true">03</span>
@@ -413,123 +416,22 @@
               <h3 class="project-name">OneInsure (Main App)</h3>
               <p class="project-desc">Policy document management feature that eliminated manual data entry for the support team. Led a full UI/UX overhaul that lifted app store ratings and user engagement metrics.</p>
               <span class="project-metric">&#8595; 50% manual data entry reduction</span>
-              <div class="project-tech">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Dart</span>
-                <span class="tech-tag">UI/UX Revamp</span>
-              </div>
             </div>
-            <div class="pc-footer">
-              <a href="https://play.google.com/store/apps/details?id=com.robinhood.oneinsure" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Main App on Google Play">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
-                Google Play
-              </a>
-              <a href="https://apps.apple.com/in/app/oneinsure-your-insurance-app/id1211262262" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="OneInsure Main App on App Store">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                App Store
+            <div class="pc-card-actions">
+              <a href="projects.html#proj-main" class="btn-view-more">
+                <span>View More</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </article>
 
-          <article class="project-card pc-partner" role="listitem" aria-label="Partner Money App project">
-            <div class="pc-head">
-              <div class="pc-icon" aria-hidden="true">&#128179;</div>
-              <span class="pc-num" aria-hidden="true">04</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-meta">
-                <span class="project-platform">Android / iOS</span>
-                <span class="pc-type">Flutter App</span>
-              </div>
-              <h3 class="project-name">Partner Money App</h3>
-              <p class="project-desc">Real-time brokerage balance tracking for insurance partners and sub-brokers, giving them instant visibility into their earnings and commission history.</p>
-              <span class="project-metric">Real-time earnings visibility</span>
-              <div class="project-tech">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Dart</span>
-                <span class="tech-tag">Real-time Data</span>
-              </div>
-            </div>
-            <div class="pc-footer">
-              <a href="https://play.google.com/store/apps/details?id=com.robinhood.partnermoney" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Partner Money App on Google Play">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
-                Google Play
-              </a>
-            </div>
-          </article>
+        </div>
 
-          <article class="project-card pc-dashboard" role="listitem" aria-label="Business KPI Dashboard project">
-            <div class="pc-head">
-              <div class="pc-icon" aria-hidden="true">&#128202;</div>
-              <span class="pc-num" aria-hidden="true">05</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-meta">
-                <span class="project-platform">Web</span>
-                <span class="pc-type">Web App</span>
-              </div>
-              <h3 class="project-name">Business KPI Dashboard</h3>
-              <p class="project-desc">KPI dashboard in AngularJS and Bootstrap providing management with real-time visibility into daily business numbers. Significantly cut the time needed to compile daily reports.</p>
-              <span class="project-metric">&#8595; 60% reporting time saved</span>
-              <div class="project-tech">
-                <span class="tech-tag">AngularJS</span>
-                <span class="tech-tag">Bootstrap</span>
-                <span class="tech-tag">REST API</span>
-              </div>
-            </div>
-            <div class="pc-footer pc-footer-empty"></div>
-          </article>
-
-          <article class="project-card pc-pos" role="listitem" aria-label="One Go POS project">
-            <div class="pc-head">
-              <div class="pc-icon" aria-hidden="true">&#128722;</div>
-              <span class="pc-num" aria-hidden="true">06</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-meta">
-                <span class="project-platform">Android</span>
-                <span class="pc-type">Ionic App</span>
-              </div>
-              <h3 class="project-name">One Go POS</h3>
-              <p class="project-desc">Point-of-sale platform enabling insurance agents to offer 360&deg; coverage to customers on the spot &mdash; whether in-office or in the field. Streamlines the entire policy issuance flow.</p>
-              <span class="project-metric">Field &amp; in-office ready</span>
-              <div class="project-tech">
-                <span class="tech-tag">Angular</span>
-                <span class="tech-tag">Ionic</span>
-                <span class="tech-tag">Android</span>
-              </div>
-            </div>
-            <div class="pc-footer">
-              <a href="https://play.google.com/store/apps/details?id=com.robinhood.pos" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="One Go POS on Google Play">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.35.2.74.24 1.1.12l.07-.05 10.4-10.4-2.87-2.87L3.18 23.76zm15.4-13.2-2.6-1.47L12.9 12l3.08 3.08 2.61-1.47c.74-.42.74-1.53-.01-1.95zM2.29.58A1.2 1.2 0 0 0 2 1.5v21c0 .38.14.72.37.98l.06.05L13.8 12.14l.01-.01L2.35.63l-.06-.05zM4.28.12 4.21.07 14.72 10.6l-2.87 2.87L4.28.12z"/></svg>
-                Google Play
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card pc-lync" role="listitem" aria-label="LyncBiz Planet Marathi project">
-            <div class="pc-head">
-              <div class="pc-icon" aria-hidden="true">&#127916;</div>
-              <span class="pc-num" aria-hidden="true">07</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-meta">
-                <span class="project-platform">Android / iOS</span>
-                <span class="pc-type">Hybrid App</span>
-              </div>
-              <h3 class="project-name">LyncBiz / Planet Marathi</h3>
-              <p class="project-desc">Hybrid business and entertainment platform covering Arts, Culture, and organizational networking. Modular architecture built with Ionic 3 and Angular 4 for ease of scaling.</p>
-              <span class="project-metric">Business + Entertainment platform</span>
-              <div class="project-tech">
-                <span class="tech-tag">Ionic 3</span>
-                <span class="tech-tag">Angular 4</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Cordova</span>
-              </div>
-            </div>
-            <div class="pc-footer pc-footer-empty"></div>
-          </article>
-
+        <div class="view-all-wrap reveal">
+          <a href="projects.html" class="btn btn-outline">
+            View All 7 Projects
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -543,76 +445,289 @@
         <h2 class="section-title reveal reveal-delay-1" id="skills-heading">Technical Skills</h2>
         <p class="section-subtitle reveal reveal-delay-2">Tools and technologies I work with across mobile, web, backend, and infrastructure.</p>
 
-        <div class="skills-grid reveal reveal-delay-2">
-          <div class="skill-category">
-            <div class="skill-category-title">Languages</div>
-            <div class="skill-pills" role="list" aria-label="Programming languages">
-              <span class="skill-pill primary" role="listitem">Dart</span>
-              <span class="skill-pill primary" role="listitem">TypeScript</span>
-              <span class="skill-pill" role="listitem">JavaScript</span>
-              <span class="skill-pill" role="listitem">C# (.NET)</span>
-            </div>
+        <!-- ── Stats strip ── -->
+        <div class="sk-stats reveal reveal-delay-2">
+          <div class="sk-stat">
+            <span class="sk-stat-num">29</span>
+            <span class="sk-stat-label">Technologies</span>
           </div>
-
-          <div class="skill-category">
-            <div class="skill-category-title">Frameworks</div>
-            <div class="skill-pills" role="list" aria-label="Frameworks">
-              <span class="skill-pill primary" role="listitem">Flutter</span>
-              <span class="skill-pill primary" role="listitem">Angular</span>
-              <span class="skill-pill" role="listitem">Ionic Framework</span>
-              <span class="skill-pill" role="listitem">ASP.NET MVC</span>
-              <span class="skill-pill" role="listitem">Bootstrap</span>
-              <span class="skill-pill" role="listitem">jQuery</span>
-            </div>
+          <div class="sk-stat">
+            <span class="sk-stat-num">6</span>
+            <span class="sk-stat-label">Categories</span>
           </div>
-
-          <div class="skill-category">
-            <div class="skill-category-title">Web Technologies</div>
-            <div class="skill-pills" role="list" aria-label="Web technologies">
-              <span class="skill-pill primary" role="listitem">HTML5</span>
-              <span class="skill-pill primary" role="listitem">CSS3</span>
-              <span class="skill-pill" role="listitem">SASS</span>
-              <span class="skill-pill" role="listitem">Responsive Design</span>
-            </div>
+          <div class="sk-stat">
+            <span class="sk-stat-num">7+</span>
+            <span class="sk-stat-label">Years Building</span>
           </div>
-
-          <div class="skill-category">
-            <div class="skill-category-title">Backend &amp; APIs</div>
-            <div class="skill-pills" role="list" aria-label="Backend and API skills">
-              <span class="skill-pill primary" role="listitem">RESTful APIs</span>
-              <span class="skill-pill" role="listitem">MSSQL</span>
-              <span class="skill-pill" role="listitem">Firebase</span>
-              <span class="skill-pill" role="listitem">API Design</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-category-title">Tools &amp; Platforms</div>
-            <div class="skill-pills" role="list" aria-label="Tools and platforms">
-              <span class="skill-pill primary" role="listitem">Git / GitHub</span>
-              <span class="skill-pill" role="listitem">Postman</span>
-              <span class="skill-pill" role="listitem">Firebase Console</span>
-              <span class="skill-pill" role="listitem">Tortoise SVN</span>
-              <span class="skill-pill" role="listitem">macOS</span>
-              <span class="skill-pill" role="listitem">Windows</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-category-title">Leadership &amp; Process</div>
-            <div class="skill-pills" role="list" aria-label="Leadership and process skills">
-              <span class="skill-pill primary" role="listitem">Agile / Scrum</span>
-              <span class="skill-pill" role="listitem">Sprint Planning</span>
-              <span class="skill-pill" role="listitem">Code Reviews</span>
-              <span class="skill-pill" role="listitem">CI/CD</span>
-              <span class="skill-pill" role="listitem">Team Mentorship</span>
-            </div>
+          <div class="sk-stat">
+            <span class="sk-stat-num">3</span>
+            <span class="sk-stat-label">Platforms</span>
           </div>
         </div>
+
+        <!-- ── Category filter ── -->
+        <div class="sk-filter-bar reveal reveal-delay-3">
+          <button class="sk-filter active" data-filter="all">All <span class="sk-f-count">29</span></button>
+          <button class="sk-filter" data-filter="lang">Languages <span class="sk-f-count">4</span></button>
+          <button class="sk-filter" data-filter="fw">Frameworks <span class="sk-f-count">6</span></button>
+          <button class="sk-filter" data-filter="web">Web Tech <span class="sk-f-count">4</span></button>
+          <button class="sk-filter" data-filter="be">Backend <span class="sk-f-count">4</span></button>
+          <button class="sk-filter" data-filter="tools">Tools <span class="sk-f-count">6</span></button>
+          <button class="sk-filter" data-filter="lead">Leadership <span class="sk-f-count">5</span></button>
+        </div>
+
+        <!-- ── Skills grid ── -->
+        <div class="sk-grid reveal reveal-delay-3">
+
+          <!-- Languages -->
+          <div class="sk-item" data-cat="lang">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#0ea5e9,#0369a1)">D</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Dart</span><span class="sk-item-cat">Language</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:95%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">95%</span><span class="sk-lv expert">Expert</span></div>
+          </div>
+          <div class="sk-item" data-cat="fw">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#54c5f8,#0175c2)">Fl</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Flutter</span><span class="sk-item-cat">Framework</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:96%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">96%</span><span class="sk-lv expert">Expert</span></div>
+          </div>
+          <div class="sk-item" data-cat="lang">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#3178c6,#1a4f8f)">TS</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">TypeScript</span><span class="sk-item-cat">Language</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:88%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">88%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item" data-cat="fw">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#dd0031,#7b0017)">Ng</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Angular</span><span class="sk-item-cat">Framework</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:88%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">88%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item" data-cat="tools">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#f97316,#c2410c)">Git</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Git / GitHub</span><span class="sk-item-cat">Tool</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:90%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">90%</span><span class="sk-lv expert">Expert</span></div>
+          </div>
+          <div class="sk-item" data-cat="lang">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#ca8a04,#92400e)">JS</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">JavaScript</span><span class="sk-item-cat">Language</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">80%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="be">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#0ea5e9,#14b8a6)">AP</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">RESTful APIs</span><span class="sk-item-cat">Backend</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:88%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">88%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="web">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#e34f26,#bf3a18)">H5</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">HTML5</span><span class="sk-item-cat">Web Tech</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:88%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">88%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="web">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#1572b6,#0d5a9e)">C3</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">CSS3</span><span class="sk-item-cat">Web Tech</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">85%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="fw">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#3880ff,#1a5ce0)">Io</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Ionic Framework</span><span class="sk-item-cat">Framework</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:78%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">78%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="lead">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#10b981,#059669)">Ag</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Agile / Scrum</span><span class="sk-item-cat">Leadership</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:88%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">88%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="be">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#ff9800,#f44336)">Fb</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Firebase</span><span class="sk-item-cat">Backend</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:75%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">75%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="fw">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#7952b3,#5a3a9a)">Bs</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Bootstrap</span><span class="sk-item-cat">Framework</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:75%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">75%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="web">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#10b981,#059669)">RD</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Responsive Design</span><span class="sk-item-cat">Web Tech</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">85%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="tools">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#ff6c37,#e04a0e)">Pm</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Postman</span><span class="sk-item-cat">Tool</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">80%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="lead">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#0ea5e9,#0369a1)">CR</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Code Reviews</span><span class="sk-item-cat">Leadership</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">85%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="be">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#6366f1,#4f46e5)">AD</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">API Design</span><span class="sk-item-cat">Backend</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:82%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">82%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="lead">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#6366f1,#4f46e5)">SP</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Sprint Planning</span><span class="sk-item-cat">Leadership</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:82%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">82%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="tools">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#0078d4,#005a9e)">Wi</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Windows</span><span class="sk-item-cat">Platform</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">80%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="lead">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#ec4899,#be185d)">TM</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Team Mentorship</span><span class="sk-item-cat">Leadership</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">80%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="tools">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#6b7280,#374151)">Ma</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">macOS</span><span class="sk-item-cat">Platform</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:78%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">78%</span><span class="sk-lv advanced">Advanced</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="web">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#cf649a,#a0427a)">Ss</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">SASS</span><span class="sk-item-cat">Web Tech</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:72%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">72%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="lead">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#8b5cf6,#6d28d9)">CD</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">CI/CD</span><span class="sk-item-cat">Leadership</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:72%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">72%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="fw">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#512bd4,#3b1fa8)">.N</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">ASP.NET MVC</span><span class="sk-item-cat">Framework</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:62%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">62%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="lang">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#8b5cf6,#6d28d9)">C#</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">C# (.NET)</span><span class="sk-item-cat">Language</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:65%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">65%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="be">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#cc2927,#8b1a19)">Sq</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">MSSQL</span><span class="sk-item-cat">Backend</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:70%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">70%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="tools">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#ff9800,#f57c00)">Fc</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Firebase Console</span><span class="sk-item-cat">Tool</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:72%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">72%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="fw">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#0769ad,#054e80)">jQ</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">jQuery</span><span class="sk-item-cat">Framework</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:68%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-pct">68%</span><span class="sk-lv mid">Mid</span></div>
+          </div>
+          <div class="sk-item sk-extra" data-cat="tools">
+            <div class="sk-badge" style="--gi:linear-gradient(135deg,#795548,#4e342e)">Sv</div>
+            <div class="sk-item-mid">
+              <div class="sk-item-top"><span class="sk-item-name">Tortoise SVN</span><span class="sk-item-cat">Tool</span></div>
+              <div class="sk-bar-track"><div class="sk-bar-fill" style="--pct:62%"></div></div>
+            </div>
+            <div class="sk-item-right"><span class="sk-lv mid">Mid</span></div>
+          </div>
+
+        </div>
+
+        <!-- View More button (All filter only) -->
+        <div class="sk-view-more-wrap" id="sk-view-more-wrap">
+          <button class="sk-view-more-btn" id="sk-view-more-btn">
+            <span class="sk-vm-text">View More</span>
+            <span class="sk-vm-count">+23 skills</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
       </div>
     </section>
 
-    <!-- =============================================
+      <!-- =============================================
          EDUCATION
     ============================================= -->
     <section id="education" class="section" aria-labelledby="education-heading">
@@ -656,7 +771,7 @@
           <div class="contact-info">
             <a href="mailto:vinayak.rstg94@gmail.com" class="contact-item" aria-label="Send email to Vinayak">
               <div class="contact-item-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji/assets/E-mail/3D/e-mail_3d.png" alt="" width="32" height="32" />
               </div>
               <div>
                 <div class="contact-item-label">Email</div>
@@ -665,25 +780,25 @@
             </a>
             <a href="tel:+919819854449" class="contact-item" aria-label="Call Vinayak">
               <div class="contact-item-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.54 3.49 2 2 0 0 1 3.5 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.16 6.16l1.21-1.21a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji/assets/Telephone%20receiver/3D/telephone_receiver_3d.png" alt="" width="32" height="32" />
               </div>
               <div>
                 <div class="contact-item-label">Phone</div>
                 <div class="contact-item-value">+91 98198 54449</div>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/vinayak-rastogi-aa92a779" class="contact-item" target="_blank" rel="noopener noreferrer" aria-label="Vinayak's LinkedIn profile">
+            <a href="https://www.linkedin.com/in/vinayak-rastogi-aa92a779" class="contact-item" target="_blank" rel="noopener noreferrer" aria-label="Connect with Vinayak on LinkedIn">
               <div class="contact-item-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji/assets/Briefcase/3D/briefcase_3d.png" alt="" width="32" height="32" />
               </div>
               <div>
                 <div class="contact-item-label">LinkedIn</div>
-                <div class="contact-item-value">vinayak-rastogi-aa92a779</div>
+                <div class="contact-item-value">Connect on LinkedIn</div>
               </div>
             </a>
             <div class="contact-item contact-item-static" aria-label="Location: Mumbai, India">
               <div class="contact-item-icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji/assets/Round%20pushpin/3D/round_pushpin_3d.png" alt="" width="32" height="32" />
               </div>
               <div>
                 <div class="contact-item-label">Location</div>
@@ -887,6 +1002,114 @@
 
     // ---- Back to Top ----
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ---- Skills — filter + View More ----
+    (function () {
+      const filters   = document.querySelectorAll('.sk-filter');
+      const items     = document.querySelectorAll('.sk-item');
+      const extras    = document.querySelectorAll('.sk-extra');
+      const vmWrap    = document.getElementById('sk-view-more-wrap');
+      const vmBtn     = document.getElementById('sk-view-more-btn');
+      const vmText    = vmBtn && vmBtn.querySelector('.sk-vm-text');
+      if (!filters.length) return;
+
+      let expanded = false;
+
+      function animateVisible() {
+        let i = 0;
+        items.forEach(item => {
+          if (getComputedStyle(item).display !== 'none') {
+            const idx = i++;
+            item.querySelectorAll('.sk-bar-fill').forEach(f => {
+              f.classList.remove('animated');
+              setTimeout(() => requestAnimationFrame(() => requestAnimationFrame(() => f.classList.add('animated'))), idx * 35);
+            });
+          }
+        });
+      }
+
+      function applyCap() {
+        extras.forEach(el => el.classList.add('sk-capped'));
+        vmWrap.classList.remove('sk-hidden');
+        vmBtn.classList.remove('open');
+        if (vmText) vmText.textContent = 'View More';
+      }
+
+      function removeCap() {
+        extras.forEach(el => el.classList.remove('sk-capped'));
+        vmWrap.classList.add('sk-hidden');
+      }
+
+      // Initial state — all filter active, capped
+      applyCap();
+
+      filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filters.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const cat = btn.dataset.filter;
+
+          items.forEach(item => {
+            item.classList.remove('sk-hidden', 'sk-capped');
+          });
+
+          if (cat === 'all') {
+            if (!expanded) applyCap();
+            else vmWrap.classList.add('sk-hidden');
+          } else {
+            items.forEach(item => {
+              if (item.dataset.cat !== cat) item.classList.add('sk-hidden');
+            });
+            vmWrap.classList.add('sk-hidden');
+          }
+          animateVisible();
+        });
+      });
+
+      if (vmBtn) {
+        vmBtn.addEventListener('click', () => {
+          expanded = !expanded;
+          if (expanded) {
+            extras.forEach(el => el.classList.remove('sk-capped'));
+            vmBtn.classList.add('open');
+            if (vmText) vmText.textContent = 'View Less';
+            animateVisible();
+          } else {
+            applyCap();
+          }
+        });
+      }
+    })();
+
+    // ---- Skills — scroll bar animation ----
+    (function () {
+      const grid = document.querySelector('.sk-grid');
+      if (!grid) return;
+      let done = false;
+      const obs = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting && !done) {
+          done = true;
+          grid.querySelectorAll('.sk-bar-fill').forEach((fill, i) => {
+            setTimeout(() => requestAnimationFrame(() => requestAnimationFrame(() => fill.classList.add('animated'))), i * 35);
+          });
+          obs.disconnect();
+        }
+      }, { threshold: 0.05 });
+      obs.observe(grid);
+    })();
+
+    // ---- Experience — expand / collapse ----
+    document.querySelectorAll('.tl-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.timeline-card');
+        const expandable = card.querySelector('.tl-expandable');
+        const isOpen = expandable.classList.toggle('open');
+        expandable.setAttribute('aria-hidden', String(!isOpen));
+        btn.classList.toggle('open', isOpen);
+        btn.setAttribute('aria-expanded', String(isOpen));
+        btn.querySelector('.tl-toggle-text').textContent = isOpen ? 'View Less' : 'View More';
+      });
+    });
 
     // ---- Contact Form ----
     const form       = document.getElementById('contact-form');
